@@ -6,10 +6,11 @@ import './App.css';
 export default class App extends Component{
   render(){
  return (
-   <div className="App" style={{backgroundColor: "red"}}>
-     <h1 align="center">Form for Shipment</h1>
-   
- <input text name/>
+   <div className="Card"  >
+     <h1 className="display">DO YOU WANT US TO SHIP THIS TO YOU?</h1>
+     <button className="btn-yes">YES</button>
+     <button className="btn-no">NO</button>
+ 
  </div>
  )
   }
