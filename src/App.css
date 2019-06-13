@@ -1,8 +1,45 @@
-.Card{
+.Container{
     background:linear-gradient(35deg,#448aff, #0d47a1) ;
     color: #fff;
+    margin: auto;
     padding: 50px;
     height: 50%;
-    width: 50%;
     text-align: center
+}
+
+.Display{
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+
+
+.Btn-yes{
+    background: #fff;
+    color:#fff ;
+    background: linear-gradient(180deg, #fff, #448aff);
+    font-size: 16px;
+    font-family: sans-serif, Arial, Helvetica;
+    border-radius: 8px;
+    padding: 15px;
+     margin: 3px;
+     border: none;
+
+}
+
+
+
+
+
+.Btn-no{
+    background: #fff;
+    color:#fff ;
+    background: linear-gradient(180deg, #fff, #448aff);
+    font-size: 16px;
+    font-family: sans-serif, Arial, Helvetica;
+    border-radius: 8px;
+    padding: 15px;
+     margin: 5px;
+     border: none;
 }
