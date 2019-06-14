@@ -1,24 +1,41 @@
-import React, {Component} from 'react';
+/* eslint-disable default-case */
+import React, { Component } from 'react';
 import './App.css';
-import LoginForm from './Component/LoginForm/index';
 
+import StepZero from './Component/StepZero'
+import StepOne from './Component/StepOne';
+import StepTwo from './Component/StepTwo';
+import StepThree from './Component/StepThree';
 
 
 export default class App extends Component {
-  render(){
-
+  state = {
+    currentIteration: 0
+  }
   
- return (
-   <div className="Container"  >
-     <h1 className="Display">DO YOU WANT US TO SHIP THIS TO YOU?</h1>
-     <div className="My-button">
-     <button className="Btn-yes">YES</button>
-     <button className="Btn-no">NO</button>
-     </div>
- 
- </div>
- )
+
+  handleNextStep = (step) => {
+    console.log(step)
+    this.setState({
+      currentIteration: step
+    })
+  }
+
+  render() {
+    const { currentIteration } = this.state
+
+    switch (currentIteration) {
+      case 0:
+        return <StepZero handleNextStep={this.handleNextStep} />
+      case 1:
+        return <StepOne handleNextStep={this.handleNextStep} />
+      case 2:
+        return <StepTwo handleNextStep={this.handleNextStep} />
+        case 3:
+          return <StepThree handleNextStep={this.handleNextStep} />
+          
+        
+
+    };
   }
 };
-
- 
